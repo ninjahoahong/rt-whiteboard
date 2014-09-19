@@ -1,0 +1,28 @@
+{
+  "name": "rt-whiteboard",
+  "version": "0.0.1",
+  "description": "this is a very simple real time whiteboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ninjahoahong/rt-whiteboard.git"
+  },
+  "keywords": [
+    "realtime",
+    "whiteboard"
+  ],
+  "author": "ninjahoahong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ninjahoahong/rt-whiteboard/issues"
+  },
+  "dependencies": {
+    "backbone": "~1.1.2",
+    "jquery": "~2.1.1",
+    "sketch": "~0.2.0",
+    "socket.io": "~1.1.0"
+  }
+}
