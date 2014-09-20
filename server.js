@@ -1,7 +1,9 @@
 var express = require('express');
 var app     = express();
-var port    = 3000;
-var io      = require('socket.io').listen(app.listen(port));
+var server  = require('http').Server(app);
+var io      = require('socket.io')(server);
+
+server.listen(3000);
 
 // view engine
 app.set('view engine', 'jade');
