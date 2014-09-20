@@ -16,6 +16,8 @@ app.get('/', function(req, res){
     res.render('index');
 });
 
-io.on('connection', function(socket){
-    
+io.on('connection', function(socket) {
+    socket.on('draw', function(data) {
+        io.emit('draw', data);
+    });
 });
