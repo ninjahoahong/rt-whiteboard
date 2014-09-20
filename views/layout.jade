@@ -5,10 +5,16 @@ html
     script(type='text/javascript', src='http://code.jquery.com/jquery-latest.js')
     script(type='text/javascript', src='/js/sketch.min.js')
     script(type='text/javascript', src='/socket.io/socket.io.js')
-    script(type='text/javascript', src='/js/draw.js')  
+    script(type='text/javascript', src='/js/draw.js')
+    script(type='text/javascript', src='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')  
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
   body
-    header#banner
-      h1 Simple white board
+    div.navbar.navbar-default.navbar-fixed-top(role="navigation")
+      div.container
+        div.navbar-header
+          a.navbar-brand(href="#") Simple white board
     block content
-    footer enjoy your luck
+    div.navbar.navbar-inverse
+      div.container
+        p.muted.credit enjoy your fun. ninjahoahong
