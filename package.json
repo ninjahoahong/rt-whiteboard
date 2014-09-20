@@ -4,7 +4,8 @@
   "description": "this is a very simple real time whiteboard",
   "main": "server.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node server"
   },
   "repository": {
     "type": "git",
