@@ -21,3 +21,9 @@ io.on('connection', function(socket) {
         io.emit('draw', data);
     });
 });
+
+io.on('set_name', function(socket){
+    socket.on('nickname', data.name, function(){
+        io.emit('name_set', data);
+    });
+});

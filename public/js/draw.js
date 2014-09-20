@@ -61,4 +61,8 @@ $(function(){
     socket.on('draw', function(data) {
         drawPath(ctx, data.a, data.b);
     });
+
+    $('#setname').click(function(){
+        socket.emit('set_name', {name: $('#nickname').val()});
+    });
 });
